@@ -1,0 +1,6 @@
+@HelioApp.API_HostAddress = http://localhost:5091
+
+GET {{HelioApp.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

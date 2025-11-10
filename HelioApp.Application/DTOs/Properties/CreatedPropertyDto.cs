@@ -1,0 +1,15 @@
+﻿using Microsoft.AspNetCore.Http;
+
+namespace HelioApp.Application.DTOS.Properties;
+
+public sealed record CreatedPropertyDto(
+    string Title,
+    string Description,
+    IFormFile[] Images,
+    decimal Price,
+    DateTime ExpirationDate,
+    string Location,
+    string ContactName,
+    string ContactPhone,
+    string Amenities
+    );

@@ -1,0 +1,16 @@
+H:\Work\HelioApp\HelioApp\HelioApp.Application\bin\Release\net9.0\HelioApp.Application.deps.json
+H:\Work\HelioApp\HelioApp\HelioApp.Application\bin\Release\net9.0\HelioApp.Application.dll
+H:\Work\HelioApp\HelioApp\HelioApp.Application\bin\Release\net9.0\HelioApp.Application.pdb
+H:\Work\HelioApp\HelioApp\HelioApp.Application\bin\Release\net9.0\HelioApp.Domain.dll
+H:\Work\HelioApp\HelioApp\HelioApp.Application\bin\Release\net9.0\HelioApp.Domain.pdb
+H:\Work\HelioApp\HelioApp\HelioApp.Application\obj\Release\net9.0\HelioApp.Application.csproj.AssemblyReference.cache
+H:\Work\HelioApp\HelioApp\HelioApp.Application\obj\Release\net9.0\HelioApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+H:\Work\HelioApp\HelioApp\HelioApp.Application\obj\Release\net9.0\HelioApp.Application.AssemblyInfoInputs.cache
+H:\Work\HelioApp\HelioApp\HelioApp.Application\obj\Release\net9.0\HelioApp.Application.AssemblyInfo.cs
+H:\Work\HelioApp\HelioApp\HelioApp.Application\obj\Release\net9.0\HelioApp.Application.csproj.CoreCompileInputs.cache
+H:\Work\HelioApp\HelioApp\HelioApp.Application\obj\Release\net9.0\HelioApp.Application.sourcelink.json
+H:\Work\HelioApp\HelioApp\HelioApp.Application\obj\Release\net9.0\HelioApp.A20D4236.Up2Date
+H:\Work\HelioApp\HelioApp\HelioApp.Application\obj\Release\net9.0\HelioApp.Application.dll
+H:\Work\HelioApp\HelioApp\HelioApp.Application\obj\Release\net9.0\refint\HelioApp.Application.dll
+H:\Work\HelioApp\HelioApp\HelioApp.Application\obj\Release\net9.0\HelioApp.Application.pdb
+H:\Work\HelioApp\HelioApp\HelioApp.Application\obj\Release\net9.0\ref\HelioApp.Application.dll
