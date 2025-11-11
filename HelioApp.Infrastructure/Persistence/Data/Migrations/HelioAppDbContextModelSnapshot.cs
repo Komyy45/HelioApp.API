@@ -2656,24 +2656,12 @@ namespace HelioApp.Infrastructure.Persistence.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("About")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ApplicationUserId")
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<decimal>("AverageRating")
-                        .ValueGeneratedOnAdd()
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)")
-                        .HasDefaultValue(0m);
-
-                    b.Property<Guid>("CategoryId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CoverImageUrl")
                         .HasColumnType("nvarchar(max)");
@@ -2696,11 +2684,6 @@ namespace HelioApp.Infrastructure.Persistence.Data.Migrations
                     b.PrimitiveCollection<string>("Images")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsFeatured")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
-
                     b.Property<bool>("IsVerified")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
@@ -2718,9 +2701,6 @@ namespace HelioApp.Infrastructure.Persistence.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProfilePictureUrl")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("ProviderId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
@@ -2728,25 +2708,15 @@ namespace HelioApp.Infrastructure.Persistence.Data.Migrations
                     b.Property<byte>("Status")
                         .HasColumnType("tinyint");
 
-                    b.Property<Guid?>("SubcategoryId")
+                    b.Property<Guid>("SubcategoryId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TotalReviews")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(0);
-
                     b.Property<DateTimeOffset?>("UpdatedAt")
                         .HasColumnType("datetimeoffset");
-
-                    b.Property<int>("ViewCount")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(0);
 
                     b.Property<string>("WebsiteUrl")
                         .HasColumnType("nvarchar(max)");
@@ -2754,14 +2724,12 @@ namespace HelioApp.Infrastructure.Persistence.Data.Migrations
                     b.Property<string>("Whatsapp")
                         .HasColumnType("nvarchar(max)");
 
-                    b.PrimitiveCollection<string>("WorkingHours")
+                    b.Property<string>("WorkingHours")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ApplicationUserId");
-
-                    b.HasIndex("CategoryId");
 
                     b.HasIndex("ProviderId");
 
@@ -3340,12 +3308,6 @@ namespace HelioApp.Infrastructure.Persistence.Data.Migrations
                         .WithMany("Services")
                         .HasForeignKey("ApplicationUserId");
 
-                    b.HasOne("HelioApp.Domain.Entities.Services___Categories.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("HelioApp.Domain.Entities.Authentication.ApplicationUser", "Provider")
                         .WithMany()
                         .HasForeignKey("ProviderId")
@@ -3355,9 +3317,8 @@ namespace HelioApp.Infrastructure.Persistence.Data.Migrations
                     b.HasOne("HelioApp.Domain.Entities.Services___Categories.Subcategory", "Subcategory")
                         .WithMany()
                         .HasForeignKey("SubcategoryId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.Navigation("Category");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Provider");
 

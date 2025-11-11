@@ -1,3 +1,18 @@
-﻿namespace HelioApp.Application.DTOS;
+﻿using Microsoft.AspNetCore.Http;
 
-public record CreateServiceDto(string Title, string? Description, decimal Price, Guid? SubcategoryId);
+namespace HelioApp.Application.DTOS;
+
+public record CreateServiceDto(
+    Guid SubcategoryId,
+    IFormFile? CoverImage, 
+    string Title,
+    string Description,
+    string Address,
+    decimal? LocationLat,
+    decimal? LocationLng,
+    string Location,
+    string Phone,
+    string? Whatsapp, 
+    string? Email,
+    string? WebsiteUrl
+    );

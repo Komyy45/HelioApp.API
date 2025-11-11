@@ -6,5 +6,4 @@ public sealed record CreateReviewDto(
     int Rating,
     string? Title,
     string Body
-    // TODO: List<string>? Images
 );

@@ -932,11 +932,9 @@ namespace HelioApp.Infrastructure.Persistence.Data.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ProviderId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    CategoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    SubcategoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    SubcategoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    About = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LocationLat = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: true),
                     LocationLng = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: true),
@@ -944,16 +942,11 @@ namespace HelioApp.Infrastructure.Persistence.Data.Migrations
                     Whatsapp = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     WebsiteUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ProfilePictureUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CoverImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Images = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     WorkingHours = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    IsFeatured = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
                     IsVerified = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
                     Status = table.Column<byte>(type: "tinyint", nullable: false),
-                    AverageRating = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false, defaultValue: 0m),
-                    TotalReviews = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
-                    ViewCount = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
                     CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false, defaultValueSql: "SYSUTCDATETIME()"),
                     UpdatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     DeletedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
@@ -974,17 +967,11 @@ namespace HelioApp.Infrastructure.Persistence.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Services_Categories_CategoryId",
-                        column: x => x.CategoryId,
-                        principalTable: "Categories",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
                         name: "FK_Services_Subcategories_SubcategoryId",
                         column: x => x.SubcategoryId,
                         principalTable: "Subcategories",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.SetNull);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -1693,11 +1680,6 @@ namespace HelioApp.Infrastructure.Persistence.Data.Migrations
                 name: "IX_Services_ApplicationUserId",
                 table: "Services",
                 column: "ApplicationUserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Services_CategoryId",
-                table: "Services",
-                column: "CategoryId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Services_ProviderId",

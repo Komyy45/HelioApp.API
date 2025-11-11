@@ -1,5 +1,6 @@
 ﻿using HelioApp.Domain.Common;
 using HelioApp.Domain.Entities.Authentication;
+using HelioApp.Domain.Enums;
 
 namespace HelioApp.Domain.Entities.Properties;
 

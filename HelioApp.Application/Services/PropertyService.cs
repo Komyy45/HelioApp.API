@@ -12,7 +12,16 @@ internal sealed class PropertyService(IPropertyRepository propertyRepository, II
     {
         var properties = await propertyRepository.GetAllAsync();
         
-        var response = properties.Select(p => new PropertyDto());
+        var response = properties.Select(p => new PropertyDto(
+            p.Id,
+            p.Title,
+            p.Images,
+            p.Price,
+            p.ExpiresAt,
+            p.Location,
+            p.ContactName,
+            p.ContactPhone
+            ));
 
         return response;
     }
@@ -21,7 +30,20 @@ internal sealed class PropertyService(IPropertyRepository propertyRepository, II
     {
        var property = await propertyRepository.GetByIdAsync(id);
 
-       var response = new PropertyDetailsDto();
+       if (property is null) throw new Exception("Property Not Found!");
+       
+       var response = new PropertyDetailsDto(
+           property.Id,
+           property.Title,
+           property.Description,
+           property.Images,
+           property.Price,
+           property.ExpiresAt,
+           property.Location,
+           property.ContactName,
+           property.ContactPhone,
+           property.Amenities
+           );
 
        return response;
     }
@@ -39,6 +61,7 @@ internal sealed class PropertyService(IPropertyRepository propertyRepository, II
             CreatedAt = DateTimeOffset.UtcNow,
             Amenities = createdProperty.Amenities,
             Location = createdProperty.Location,
+            PropertyType = createdProperty.PropertyType,
             OwnerId = "00000000-0000-0000-0000-000000000001"
         };
 
@@ -61,9 +84,19 @@ internal sealed class PropertyService(IPropertyRepository propertyRepository, II
 
     public async Task Update(UpdatedPropertyDto updatedProperty)
     {
-        var property = await propertyRepository.GetByIdAsync(new Guid());
+        var property = await propertyRepository.GetByIdAsync(updatedProperty.Id);
 
         if (property is null) throw new Exception("Property Not Found!");
+
+        property.Title = updatedProperty.Title;
+        property.Description = updatedProperty.Description;
+        property.Price = updatedProperty.Price;
+        property.ContactName = updatedProperty.ContactName;
+        property.ContactPhone = updatedProperty.ContactPhone;
+        property.Location = updatedProperty.Location;
+        property.Amenities = updatedProperty.Amenities;
+        property.PropertyType = updatedProperty.PropertyType;
+        property.ExpiresAt = updatedProperty.ExpirationDate;
         
         propertyRepository.Update(property);
 
@@ -72,7 +105,15 @@ internal sealed class PropertyService(IPropertyRepository propertyRepository, II
 
     public async Task Delete(Guid id)
     {
-        var property = await propertyRepository.GetByIdAsync(new Guid());
+        var property = await propertyRepository.GetByIdAsync(id);
+
+        if (property is null) throw new Exception("Property Not Found");
+        
+        foreach (var image in property.Images)
+        {
+            var isDeleted = await imageService.DeleteImage(image);
+            if (!isDeleted) throw new Exception("Error Deleting Property Images.");
+        }
 
         if (property is null) throw new Exception("Property Not Found!");
         

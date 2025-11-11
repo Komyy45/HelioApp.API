@@ -1,3 +1,18 @@
-﻿namespace HelioApp.Application.DTOS.Properties;
+﻿using HelioApp.Domain.Enums;
+using Microsoft.AspNetCore.Http;
 
-public sealed record UpdatedPropertyDto();
+namespace HelioApp.Application.DTOS.Properties;
+
+public sealed record UpdatedPropertyDto(
+    Guid Id,
+    string Title,
+    string Description,
+    IFormFile[] Images,
+    decimal Price,
+    DateTime ExpirationDate,
+    string Location,
+    string ContactName,
+    string ContactPhone,
+    string Amenities,
+    PropertyType PropertyType
+    );

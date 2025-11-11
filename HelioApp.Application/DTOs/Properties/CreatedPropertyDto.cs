@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using HelioApp.Domain.Enums;
+using Microsoft.AspNetCore.Http;
 
 namespace HelioApp.Application.DTOS.Properties;
 
@@ -11,5 +12,6 @@ public sealed record CreatedPropertyDto(
     string Location,
     string ContactName,
     string ContactPhone,
-    string Amenities
+    string Amenities,
+    PropertyType PropertyType
     );

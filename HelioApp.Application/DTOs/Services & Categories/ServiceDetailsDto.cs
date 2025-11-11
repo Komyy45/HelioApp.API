@@ -1,6 +1,6 @@
 ﻿namespace HelioApp.Application.DTOS;
 
-public record ServiceDto(Guid Id,
+public record ServiceDetailsDto(Guid Id,
     string Title,
     string Description,
     string? CoverImageUrl, 

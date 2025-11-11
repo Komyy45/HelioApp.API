@@ -8,7 +8,7 @@ namespace HelioApp.API.Controllers
     public class ServicesController(IServiceService serviceService) : BaseApiController
     {
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] Guid? subcategoryId)
+        public async Task<IActionResult> GetAll([FromQuery] Guid subcategoryId)
         {
             var response = await serviceService.GetAllAsync(subcategoryId);
             return Ok(response);
@@ -22,10 +22,10 @@ namespace HelioApp.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateServiceDto request)
+        public async Task<IActionResult> Create([FromForm] CreateServiceDto request)
         {
             var response = await serviceService.CreateAsync(request);
-            return CreatedAtAction(nameof(Get), new { id = response.Id }, new { response.Id });
+            return Created();
         }
 
         [HttpPut("{id:guid}")]
@@ -39,7 +39,7 @@ namespace HelioApp.API.Controllers
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
-            var response = await serviceService.DeleteAsync(id);
+            await serviceService.DeleteAsync(id);
             return NoContent();
         }
 

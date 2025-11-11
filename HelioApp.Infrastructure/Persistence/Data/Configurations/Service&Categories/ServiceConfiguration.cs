@@ -19,20 +19,14 @@ namespace HelioApp.Infrastructure.Persistence.Data.Configurations.Service_Catego
                    .HasForeignKey(s => s.ProviderId)
                    .OnDelete(DeleteBehavior.Restrict);
 
-            builder.HasOne(s => s.Category)
-                   .WithMany()
-                   .HasForeignKey(s => s.CategoryId)
-                   .OnDelete(DeleteBehavior.Restrict);
-
             builder.HasOne(s => s.Subcategory)
                    .WithMany()
                    .HasForeignKey(s => s.SubcategoryId)
-                   .OnDelete(DeleteBehavior.SetNull);
+                   .OnDelete(DeleteBehavior.Cascade);
 
             // Properties
             builder.Property(s => s.Title).IsRequired();
             builder.Property(s => s.Description).IsRequired();
-            builder.Property(s => s.About);
             builder.Property(s => s.Address).IsRequired();
 
             builder.Property(s => s.LocationLat);
@@ -43,7 +37,6 @@ namespace HelioApp.Infrastructure.Persistence.Data.Configurations.Service_Catego
             builder.Property(s => s.Email);
             builder.Property(s => s.WebsiteUrl);
 
-            builder.Property(s => s.ProfilePictureUrl);
             builder.Property(s => s.CoverImageUrl);
 
             // JSON columns for Images and WorkingHours
@@ -53,15 +46,10 @@ namespace HelioApp.Infrastructure.Persistence.Data.Configurations.Service_Catego
             builder.Property(s => s.WorkingHours)
                 .HasColumnType("nvarchar(max)");
 
-            builder.Property(s => s.IsFeatured).HasDefaultValue(false);
             builder.Property(s => s.IsVerified).HasDefaultValue(false);
 
             builder.Property(s => s.Status)
                 .HasConversion<byte>();
-
-            builder.Property(s => s.AverageRating).HasDefaultValue(0m);
-            builder.Property(s => s.TotalReviews).HasDefaultValue(0);
-            builder.Property(s => s.ViewCount).HasDefaultValue(0);
 
             builder.Property(s => s.CreatedAt).HasDefaultValueSql("SYSUTCDATETIME()");
             builder.Property(s => s.UpdatedAt);
