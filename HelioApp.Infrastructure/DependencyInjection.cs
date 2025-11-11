@@ -41,7 +41,7 @@ public static class DependencyInjection
         services.AddScoped<IOfferCodeRepository, OfferCodeRepository>();
         services.AddScoped<IEmergencyContactsRepository, EmergencyContactsRepository>();
         services.AddScoped<IPropertyRepository, PropertyRepository>();
-
+        services.AddScoped<IReviewRepository, ReviewRepository>();
         services.AddScoped<IDbContextInitializer, DbContextInitializer>();
         return services;
     }

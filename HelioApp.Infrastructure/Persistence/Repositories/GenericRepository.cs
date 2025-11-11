@@ -1,9 +1,10 @@
-﻿using System.Linq.Expressions;
-using HelioApp.Application.Contracts.Repositories;
+﻿using HelioApp.Application.Contracts.Repositories;
 using HelioApp.Domain.Common;
 using HelioApp.Domain.Contracts;
+using HelioApp.Infrastructure.Helpers;
 using HelioApp.Infrastructure.Persistence.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace HelioApp.Infrastructure.Persistence.Repositories;
 
@@ -32,11 +33,29 @@ public abstract class GenericRepository<TEntity,TKey>(HelioAppDbContext context)
         return DbSet.FirstOrDefaultAsync(e => e.Id.Equals(id));
     }
 
+    //public virtual Task<TEntity?> GetByIdAsync(TKey id, Expression<Func<TEntity, bool>> criteria)
+    //{
+    //    var query = DbSet.Where(criteria);
+    //    return query.FirstOrDefaultAsync(e => e.Id.Equals(id));
+    //}
+
     public virtual Task<TEntity?> GetByIdAsync(TKey id, Expression<Func<TEntity, bool>> criteria)
     {
-        var query = DbSet.Where(criteria);
-        return query.FirstOrDefaultAsync(e => e.Id.Equals(id));
+        var parameter = Expression.Parameter(typeof(TEntity), "e");
+
+        var idProperty = Expression.Property(parameter, "Id");
+        var idValue = Expression.Constant(id);
+        var idEquals = Expression.Equal(idProperty, idValue);
+
+        var body = new ParameterReplacer(criteria.Parameters[0], parameter).Visit(criteria.Body);
+
+        var combined = Expression.AndAlso(idEquals, body);
+
+        var lambda = Expression.Lambda<Func<TEntity, bool>>(combined, parameter);
+
+        return DbSet.FirstOrDefaultAsync(lambda);
     }
+
 
     public virtual async Task AddAsync(TEntity entity)
     {
@@ -57,4 +76,28 @@ public abstract class GenericRepository<TEntity,TKey>(HelioAppDbContext context)
     {
         return await context.SaveChangesAsync();
     }
+
+    // Helper method to list entities based on specification
+    public async Task<IReadOnlyList<TEntity>> ListAsync(ISpecification<TEntity, TKey> spec)
+    {
+        IQueryable<TEntity> query = context.Set<TEntity>();
+
+        if (spec.Criteria != null)
+            query = query.Where(spec.Criteria);
+
+        if (spec.Includes != null)
+        {
+            foreach (var include in spec.Includes)
+                query = query.Include(include);
+        }
+
+        if (spec.OrderBy != null)
+            query = query.OrderBy(spec.OrderBy);
+
+        if (spec.IsPaginationEnabled)
+            query = query.Skip(spec.Skip).Take(spec.Take);
+
+        return await query.ToListAsync();
+    }
+
 }
