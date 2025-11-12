@@ -1,5 +1,6 @@
 ﻿using HelioApp.Application.Contracts;
 using HelioApp.Application.DTOS;
+using HelioApp.Application.DTOs.Common;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HelioApp.API.Controllers
@@ -8,9 +9,9 @@ namespace HelioApp.API.Controllers
     public class ServicesController(IServiceService serviceService) : BaseApiController
     {
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] Guid subcategoryId)
+        public async Task<IActionResult> GetAll([FromQuery] Guid subcategoryId, [FromQuery] PaginationRequest request)
         {
-            var response = await serviceService.GetAllAsync(subcategoryId);
+            var response = await serviceService.GetAllAsync(subcategoryId, request);
             return Ok(response);
         }
 

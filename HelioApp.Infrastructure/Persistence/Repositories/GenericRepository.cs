@@ -56,6 +56,11 @@ public abstract class GenericRepository<TEntity,TKey>(HelioAppDbContext context)
         return DbSet.FirstOrDefaultAsync(lambda);
     }
 
+    public async Task<int> Count(Expression<Func<TEntity, bool>>? criteria = null)
+    {
+        return await (criteria is not null ? DbSet.CountAsync(criteria) : DbSet.CountAsync());
+    }
+
 
     public virtual async Task AddAsync(TEntity entity)
     {

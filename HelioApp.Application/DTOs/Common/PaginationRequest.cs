@@ -1,6 +1,6 @@
 ﻿namespace HelioApp.Application.DTOs.Common;
 
-public record PaginationRequest(
-    int Page,
-    int Size
+public sealed record PaginationRequest(
+    int PageIndex,
+    int PageSize
     );

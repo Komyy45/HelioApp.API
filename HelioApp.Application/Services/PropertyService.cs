@@ -1,16 +1,20 @@
 ﻿using HelioApp.Application.Contracts.Blob;
 using HelioApp.Application.Contracts.Repositories;
 using HelioApp.Application.Contracts.Services;
+using HelioApp.Application.DTOs.Common;
 using HelioApp.Application.DTOS.Properties;
 using HelioApp.Domain.Entities.Properties;
+using HelioApp.Domain.Specifications.Properties;
 
 namespace HelioApp.Application.Services;
 
 internal sealed class PropertyService(IPropertyRepository propertyRepository, IImageService imageService) : IPropertyService
 {
-    public async Task<IEnumerable<PropertyDto>> GetAll()
+    public async Task<PaginationResponse<PropertyDto>> GetAll(PaginationRequest request)
     {
-        var properties = await propertyRepository.GetAllAsync();
+        var spec = new GetAllPropertiesSpecification(null, request.PageSize, request.PageIndex);
+        
+        var properties = await propertyRepository.GetAllAsync(spec);
         
         var response = properties.Select(p => new PropertyDto(
             p.Id,
@@ -23,7 +27,16 @@ internal sealed class PropertyService(IPropertyRepository propertyRepository, II
             p.ContactPhone
             ));
 
-        return response;
+        var propertiesCount = await propertyRepository.Count();
+        var totalPages = (int)Math.Ceiling((float)propertiesCount / request.PageSize);
+
+        return new PaginationResponse<PropertyDto>(
+                response,
+                PageSize: request.PageSize,
+                CurrentPage: request.PageIndex,
+                TotalItems:  propertiesCount,
+                TotalPages: totalPages
+            );
     }
 
     public async Task<PropertyDetailsDto> GetById(Guid id)
@@ -88,7 +101,19 @@ internal sealed class PropertyService(IPropertyRepository propertyRepository, II
 
         if (property is null) throw new Exception("Property Not Found!");
 
+        foreach (var image in property.Images)
+            await imageService.DeleteImage(image);
+
+        var images = new List<string>();
+        
+        foreach (var image in updatedProperty.Images)
+        {
+            var imageUrl = await imageService.UploadImage(image);
+            images.Add(imageUrl);
+        }
+        
         property.Title = updatedProperty.Title;
+        property.Images = images;
         property.Description = updatedProperty.Description;
         property.Price = updatedProperty.Price;
         property.ContactName = updatedProperty.ContactName;

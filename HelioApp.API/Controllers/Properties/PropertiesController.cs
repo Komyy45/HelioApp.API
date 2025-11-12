@@ -1,4 +1,5 @@
 ﻿using HelioApp.Application.Contracts.Services;
+using HelioApp.Application.DTOs.Common;
 using HelioApp.Application.DTOS.Properties;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,9 +9,9 @@ namespace HelioApp.API.Controllers;
 public sealed class PropertiesController(IPropertyService propertyService) : BaseApiController
 {
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<PropertyDto>>> GetAll()
+    public async Task<ActionResult<IEnumerable<PropertyDto>>> GetAll([FromQuery] PaginationRequest request)
     {
-        var response = await propertyService.GetAll();
+        var response = await propertyService.GetAll(request);
         return Ok(response);
     }
 

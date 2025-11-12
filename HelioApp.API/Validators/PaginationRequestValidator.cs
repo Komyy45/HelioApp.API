@@ -9,7 +9,10 @@ internal sealed class PaginationRequestValidator : AbstractValidator<PaginationR
     
     public PaginationRequestValidator()
     {
-        RuleFor(p => p.Size)
+        RuleFor(p => p.PageSize)
             .Must(size => _allowedValues.Contains(size));
+
+        RuleFor(p => p.PageIndex)
+            .GreaterThanOrEqualTo(0);
     }
 }

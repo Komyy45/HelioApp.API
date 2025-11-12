@@ -1,15 +1,23 @@
 ﻿using HelioApp.Application.Contracts;
 using HelioApp.Application.Contracts.Blob;
 using HelioApp.Application.DTOS;
+using HelioApp.Application.DTOs.Common;
 using HelioApp.Domain.Entities.Services___Categories;
+using HelioApp.Domain.Specifications.Services___Categories;
 
 namespace HelioApp.Application.Services
 {
     internal sealed class ServiceService(IServiceRepository serviceRepository, IImageService imageService) : IServiceService
     {
-        public async Task<IEnumerable<ServiceDto>> GetAllAsync(Guid subcategoryId)
+        public async Task<PaginationResponse<ServiceDto>> GetAllAsync(Guid subcategoryId, PaginationRequest request)
         {
-            var services = await serviceRepository.GetAllAsync(subcategoryId);
+            var spec = new GetAllServicesSpecification(
+                    criteria: s => s.SubcategoryId == subcategoryId,
+                    pageSize: request.PageSize,
+                    pageIndex: request.PageIndex
+                );
+            
+            var services = await serviceRepository.GetAllAsync(spec);
 
             var response = services.Select(s => new ServiceDto(
                     s.Id,
@@ -17,7 +25,17 @@ namespace HelioApp.Application.Services
                     s.CoverImageUrl
                 ));
 
-            return response;
+            var serviceCount = await serviceRepository.Count(s => s.SubcategoryId == subcategoryId);
+
+            var totalPages = (int)Math.Ceiling((float)serviceCount / request.PageSize);
+            
+            return new PaginationResponse<ServiceDto>(
+                 response,
+                 TotalItems: serviceCount,
+                 PageSize: request.PageSize,
+                 TotalPages: totalPages,
+                 CurrentPage: request.PageIndex
+                );
         }
 
         public async Task<ServiceDetailsDto> GetByIdAsync(Guid id)
@@ -27,18 +45,18 @@ namespace HelioApp.Application.Services
             if (service is null) throw new Exception("Service Not Found!");
 
             var response = new ServiceDetailsDto(
-                    service.Id,
-                    service.Title,
-                    service.Description,
-                    service.CoverImageUrl,
-                    service.Address,
-                    service.SubcategoryId,
-                    service.CreatedAt,
-                    "",
-                    service.Phone,
-                    service.Whatsapp,
-                    service.Email
-                    );
+                service.Id,
+                service.Title,
+                service.Description,
+                service.CoverImageUrl,
+                service.Address,
+                service.SubcategoryId,
+                service.CreatedAt,
+                $"https://www.google.com/maps?q={service.LocationLat},{service.LocationLng}",
+                service.Phone,
+                service.Whatsapp,
+                service.Email
+            );
 
             return response;
         }
