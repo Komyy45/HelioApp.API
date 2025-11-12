@@ -1,42 +1,73 @@
 ﻿using HelioApp.Application.Contracts;
 using HelioApp.Domain.Entities.Authentication;
+using HelioApp.Domain.Enums;
+using HelioApp.Infrastructure.Authentication;
 using Microsoft.EntityFrameworkCore;
 
 namespace HelioApp.Infrastructure.Persistence.Data;
 
-internal sealed class DbContextInitializer(HelioAppDbContext helioAppDbContext) : IDbContextInitializer
+internal sealed class DbContextInitializer : IDbContextInitializer
 {
+    private readonly HelioAppDbContext _context;
+
+    public DbContextInitializer(HelioAppDbContext context)
+    {
+        _context = context;
+    }
+
     public async Task InitializeAsync()
     {
-       await MigrateAsync();
-       await SeedAsync();
+        await MigrateAsync();
+        await SeedAsync();
+    }
+
+    private async Task MigrateAsync()
+    {
+        var pendingMigrations = await _context.Database.GetPendingMigrationsAsync();
+        if (pendingMigrations.Any())
+            await _context.Database.MigrateAsync();
     }
 
     private async Task SeedAsync()
     {
-        // if (!userManager.Users.Any())
-        // {
-        //     string email = "admin@gmail.com";
-        //     string userName = "admin";
-        //     string phone = "+201234567890";
-        //     
-        //     var applicationUser = new ApplicationUser()
-        //     {
-        //         Email = email,
-        //         UserName = userName,
-        //         PhoneNumber = phone
-        //     };
-        //
-        //     await userManager.CreateAsync(applicationUser, "P@ssw0rd");
-        // }
-    }
+        // Seed Roles
+        if (!await _context.Roles.AnyAsync())
+        {
+            await _context.Roles.AddRangeAsync(
+                new ApplicationRole
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = "Admin",
+                    Description = "System administrator"
+                },
+                new ApplicationRole
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = "User",
+                    Description = "Regular user"
+                }
+            );
+        }
 
+        // Seed Admin User
+        if (!await _context.Users.AnyAsync(u => u.AccountType == AccountType.Admin))
+        {
+            var adminUser = new ApplicationUser
+            {
+                Id = Guid.NewGuid().ToString(),
+                Email = "admin@helio.com",
+                NormalizedEmail = "ADMIN@HELIO.COM",
+                UserName = "admin",
+                PhoneNumber = "+201234567890",
+                PasswordHash = new PasswordHasher().HashPassword("P@ssw0rd"),
+                AccountType = AccountType.Admin,
+                Status = AccountStatus.Active,
+                CreatedAt = DateTimeOffset.UtcNow
+            };
 
-    private async Task MigrateAsync()
-    {
-        var migrations = await helioAppDbContext.Database.GetPendingMigrationsAsync();
+            await _context.Users.AddAsync(adminUser);
+        }
 
-        if (migrations.Any())
-            await helioAppDbContext.Database.MigrateAsync();
+        await _context.SaveChangesAsync();
     }
 }

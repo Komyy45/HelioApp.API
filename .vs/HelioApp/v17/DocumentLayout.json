@@ -1,0 +1,789 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\persistence\\repositories\\users\u0026roles\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\persistence\\repositories\\users\u0026roles\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\services\\users\u0026roles\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\services\\users\u0026roles\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.api\\controllers\\authentication\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|solutionrelative:helioapp.api\\controllers\\authentication\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\mappingprofiles\\users\u0026roles\\adminprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\mappingprofiles\\users\u0026roles\\adminprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\authentication\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\authentication\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\persistence\\data\\dbcontextinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\persistence\\data\\dbcontextinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\dtos\\users\u0026roles\\rolesdto\\adminresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\dtos\\users\u0026roles\\rolesdto\\adminresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.api\\controllers\\authentication\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|solutionrelative:helioapp.api\\controllers\\authentication\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\services\\users\u0026roles\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\services\\users\u0026roles\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\contracts\\authentication\\users\u0026roles\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\contracts\\authentication\\users\u0026roles\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\persistence\\repositories\\users\u0026roles\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\persistence\\repositories\\users\u0026roles\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\contracts\\repositories\\users\u0026roles\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\contracts\\repositories\\users\u0026roles\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\contracts\\repositories\\users\u0026roles\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\contracts\\repositories\\users\u0026roles\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\dtos\\users\u0026roles\\rolesdto\\createupdateadminrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\dtos\\users\u0026roles\\rolesdto\\createupdateadminrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\mappingprofiles\\users\u0026roles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\mappingprofiles\\users\u0026roles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\dtos\\users\u0026roles\\usersdto\\usersresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\dtos\\users\u0026roles\\usersdto\\usersresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\dtos\\users\u0026roles\\usersdto\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\dtos\\users\u0026roles\\usersdto\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\contracts\\authentication\\users\u0026roles\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\contracts\\authentication\\users\u0026roles\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6F7386C-0FC2-4D7B-93E9-C6744852995E}|HelioApp.Domain\\HelioApp.Domain.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.domain\\entities\\authentication\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F7386C-0FC2-4D7B-93E9-C6744852995E}|HelioApp.Domain\\HelioApp.Domain.csproj|solutionrelative:helioapp.domain\\entities\\authentication\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\persistence\\data\\helioappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\persistence\\data\\helioappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|solutionrelative:helioapp.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|solutionrelative:helioapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.api\\controllers\\authentication\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|solutionrelative:helioapp.api\\controllers\\authentication\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\authentication\\jwtbearertokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\authentication\\jwtbearertokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\authentication\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\authentication\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\CategorySortingSpecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Params\\Category\\CategoryQueryParams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Enums\\Category\\CategorySortingOptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\CategoryWithProductsSpecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Infrastructure\\Persistence\\SpecificationEvaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\BaseSpecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Domain\\Interfaces\\ISpecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\dtos\\authentication\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\dtos\\authentication\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\persistence\\data\\migrations\\20251111122053_addapplicationuserdbset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\persistence\\data\\migrations\\20251111122053_addapplicationuserdbset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DA943D60-CABE-486B-B4B5-81BF811B58BB}|HelioApp.API\\HelioApp.API.csproj|solutionrelative:helioapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\persistence\\data\\migrations\\20251111130315_updatedconfigurationapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\persistence\\data\\migrations\\20251111130315_updatedconfigurationapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\persistence\\data\\migrations\\20251111131135_removeapplicationuseriddefault.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\persistence\\data\\migrations\\20251111131135_removeapplicationuseriddefault.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111123618_AddGuidDefaultToApplicationUserId.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111123618_AddGuidDefaultToApplicationUserId.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6F7386C-0FC2-4D7B-93E9-C6744852995E}|HelioApp.Domain\\HelioApp.Domain.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.domain\\enums\\accounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F7386C-0FC2-4D7B-93E9-C6744852995E}|HelioApp.Domain\\HelioApp.Domain.csproj|solutionrelative:helioapp.domain\\enums\\accounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\contracts\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\contracts\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.application\\services\\offerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A4C273-EB12-4955-9FC7-29B80B8BC3BC}|HelioApp.Application\\HelioApp.Application.csproj|solutionrelative:helioapp.application\\services\\offerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\blob\\cloudnaryimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\blob\\cloudnaryimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\blob\\cloudinaryoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\blob\\cloudinaryoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|c:\\api projects feelance\\helio\\helioapp.api\\helioapp.infrastructure\\persistence\\data\\migrations\\20251111164931_addapplicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131146C4-9D2D-4803-8FEF-9C93C251FA14}|HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj|solutionrelative:helioapp.infrastructure\\persistence\\data\\migrations\\20251111164931_addapplicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminResponse.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DTOs\\Users\u0026Roles\\RolesDTO\\AdminResponse.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\DTOs\\Users\u0026Roles\\RolesDTO\\AdminResponse.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DTOs\\Users\u0026Roles\\RolesDTO\\AdminResponse.cs",
+              "RelativeToolTip": "HelioApp.Application\\DTOs\\Users\u0026Roles\\RolesDTO\\AdminResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:09:14.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Repositories\\Users\u0026Roles\\UserRepository.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Persistence\\Repositories\\Users\u0026Roles\\UserRepository.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Repositories\\Users\u0026Roles\\UserRepository.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Persistence\\Repositories\\Users\u0026Roles\\UserRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvx4AAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T09:25:31.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminProfile.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\MappingProfiles\\Users\u0026Roles\\AdminProfile.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\MappingProfiles\\Users\u0026Roles\\AdminProfile.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\MappingProfiles\\Users\u0026Roles\\AdminProfile.cs",
+              "RelativeToolTip": "HelioApp.Application\\MappingProfiles\\Users\u0026Roles\\AdminProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:14:02.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DbContextInitializer.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\DbContextInitializer.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Persistence\\Data\\DbContextInitializer.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\DbContextInitializer.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Persistence\\Data\\DbContextInitializer.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwDwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T17:15:37.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Authentication\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Authentication\\PasswordHasher.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Authentication\\PasswordHasher.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Authentication\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T07:51:16.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\Controllers\\Authentication\\UsersController.cs",
+              "RelativeDocumentMoniker": "HelioApp.API\\Controllers\\Authentication\\UsersController.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\Controllers\\Authentication\\UsersController.cs",
+              "RelativeToolTip": "HelioApp.API\\Controllers\\Authentication\\UsersController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwvycAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T17:23:13.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Services\\Users\u0026Roles\\UserService.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\Services\\Users\u0026Roles\\UserService.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Services\\Users\u0026Roles\\UserService.cs",
+              "RelativeToolTip": "HelioApp.Application\\Services\\Users\u0026Roles\\UserService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T17:03:24.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\Controllers\\Authentication\\AdminController.cs",
+              "RelativeDocumentMoniker": "HelioApp.API\\Controllers\\Authentication\\AdminController.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\Controllers\\Authentication\\AdminController.cs",
+              "RelativeToolTip": "HelioApp.API\\Controllers\\Authentication\\AdminController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T17:50:13.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Services\\Users\u0026Roles\\AdminService.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\Services\\Users\u0026Roles\\AdminService.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Services\\Users\u0026Roles\\AdminService.cs",
+              "RelativeToolTip": "HelioApp.Application\\Services\\Users\u0026Roles\\AdminService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T17:08:55.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Contracts\\Authentication\\Users\u0026Roles\\IAdminService.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\Contracts\\Authentication\\Users\u0026Roles\\IAdminService.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Contracts\\Authentication\\Users\u0026Roles\\IAdminService.cs",
+              "RelativeToolTip": "HelioApp.Application\\Contracts\\Authentication\\Users\u0026Roles\\IAdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T17:08:21.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwC4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T08:01:14.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminRepository.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Repositories\\Users\u0026Roles\\AdminRepository.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Persistence\\Repositories\\Users\u0026Roles\\AdminRepository.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Repositories\\Users\u0026Roles\\AdminRepository.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Persistence\\Repositories\\Users\u0026Roles\\AdminRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T16:16:49.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAdminRepository.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Contracts\\Repositories\\Users\u0026Roles\\IAdminRepository.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\Contracts\\Repositories\\Users\u0026Roles\\IAdminRepository.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Contracts\\Repositories\\Users\u0026Roles\\IAdminRepository.cs",
+              "RelativeToolTip": "HelioApp.Application\\Contracts\\Repositories\\Users\u0026Roles\\IAdminRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T16:15:20.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Contracts\\Repositories\\Users\u0026Roles\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\Contracts\\Repositories\\Users\u0026Roles\\IUserRepository.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Contracts\\Repositories\\Users\u0026Roles\\IUserRepository.cs",
+              "RelativeToolTip": "HelioApp.Application\\Contracts\\Repositories\\Users\u0026Roles\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T09:23:42.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateUpdateAdminRequest.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DTOs\\Users\u0026Roles\\RolesDTO\\CreateUpdateAdminRequest.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\DTOs\\Users\u0026Roles\\RolesDTO\\CreateUpdateAdminRequest.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DTOs\\Users\u0026Roles\\RolesDTO\\CreateUpdateAdminRequest.cs",
+              "RelativeToolTip": "HelioApp.Application\\DTOs\\Users\u0026Roles\\RolesDTO\\CreateUpdateAdminRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:09:15.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\MappingProfiles\\Users\u0026Roles\\UserProfile.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\MappingProfiles\\Users\u0026Roles\\UserProfile.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\MappingProfiles\\Users\u0026Roles\\UserProfile.cs",
+              "RelativeToolTip": "HelioApp.Application\\MappingProfiles\\Users\u0026Roles\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:36:54.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UsersResponse.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DTOs\\Users\u0026Roles\\UsersDTO\\UsersResponse.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\DTOs\\Users\u0026Roles\\UsersDTO\\UsersResponse.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DTOs\\Users\u0026Roles\\UsersDTO\\UsersResponse.cs",
+              "RelativeToolTip": "HelioApp.Application\\DTOs\\Users\u0026Roles\\UsersDTO\\UsersResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:21:34.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UpdateUserRequest.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DTOs\\Users\u0026Roles\\UsersDTO\\UpdateUserRequest.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\DTOs\\Users\u0026Roles\\UsersDTO\\UpdateUserRequest.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DTOs\\Users\u0026Roles\\UsersDTO\\UpdateUserRequest.cs",
+              "RelativeToolTip": "HelioApp.Application\\DTOs\\Users\u0026Roles\\UsersDTO\\UpdateUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:22:01.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Contracts\\Authentication\\Users\u0026Roles\\IUserService.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\Contracts\\Authentication\\Users\u0026Roles\\IUserService.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Contracts\\Authentication\\Users\u0026Roles\\IUserService.cs",
+              "RelativeToolTip": "HelioApp.Application\\Contracts\\Authentication\\Users\u0026Roles\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T17:01:39.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Domain\\Entities\\Authentication\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "HelioApp.Domain\\Entities\\Authentication\\ApplicationUser.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Domain\\Entities\\Authentication\\ApplicationUser.cs",
+              "RelativeToolTip": "HelioApp.Domain\\Entities\\Authentication\\ApplicationUser.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T12:28:47.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HelioAppDbContext.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\HelioAppDbContext.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Persistence\\Data\\HelioAppDbContext.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\HelioAppDbContext.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Persistence\\Data\\HelioAppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:45:09.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "HelioApp.API\\DependencyInjection.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\DependencyInjection.cs",
+              "RelativeToolTip": "HelioApp.API\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T14:11:37.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\Program.cs",
+              "RelativeDocumentMoniker": "HelioApp.API\\Program.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\Program.cs",
+              "RelativeToolTip": "HelioApp.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T13:57:43.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\Controllers\\Authentication\\AuthController.cs",
+              "RelativeDocumentMoniker": "HelioApp.API\\Controllers\\Authentication\\AuthController.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\Controllers\\Authentication\\AuthController.cs",
+              "RelativeToolTip": "HelioApp.API\\Controllers\\Authentication\\AuthController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAzwBIAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T09:08:28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "HelioApp.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T09:13:18.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "JwtBearerTokenGenerator.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Authentication\\JwtBearerTokenGenerator.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Authentication\\JwtBearerTokenGenerator.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Authentication\\JwtBearerTokenGenerator.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Authentication\\JwtBearerTokenGenerator.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAzwCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T08:19:42.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Authentication\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Authentication\\JwtSettings.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Authentication\\JwtSettings.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Authentication\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T08:15:27.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CategorySortingSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\CategorySortingSpecification.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\CategorySortingSpecification.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\CategorySortingSpecification.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\CategorySortingSpecification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T08:01:14.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BaseSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\BaseSpecification.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\BaseSpecification.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\BaseSpecification.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\BaseSpecification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA4wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T08:01:13.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SpecificationEvaluator.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Infrastructure\\Persistence\\SpecificationEvaluator.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Infrastructure\\Persistence\\SpecificationEvaluator.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Infrastructure\\Persistence\\SpecificationEvaluator.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Infrastructure\\Persistence\\SpecificationEvaluator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA4wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T08:01:13.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CategoryWithProductsSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\CategoryWithProductsSpecification.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\CategoryWithProductsSpecification.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\CategoryWithProductsSpecification.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Services\\Specification\\CategoryWithProductsSpecification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T08:01:13.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CategorySortingOptions.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Enums\\Category\\CategorySortingOptions.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Enums\\Category\\CategorySortingOptions.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Enums\\Category\\CategorySortingOptions.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Enums\\Category\\CategorySortingOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T08:01:13.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Shared.csproj",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Shared.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Shared.csproj",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Shared.csproj",
+              "RelativeToolTip": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Shared.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-12T08:01:14.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CategoryQueryParams.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Params\\Category\\CategoryQueryParams.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Params\\Category\\CategoryQueryParams.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Params\\Category\\CategoryQueryParams.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shared\\Params\\Category\\CategoryQueryParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T08:01:14.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ISpecification.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Domain\\Interfaces\\ISpecification.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Domain\\Interfaces\\ISpecification.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Domain\\Interfaces\\ISpecification.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\LENOVO\\Desktop\\Morag3a\\Shopping\\ShoppingSolution\\Shopping.Core\\Domain\\Interfaces\\ISpecification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T08:01:10.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserResponse.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DTOs\\Authentication\\UserResponse.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\DTOs\\Authentication\\UserResponse.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\DTOs\\Authentication\\UserResponse.cs",
+              "RelativeToolTip": "HelioApp.Application\\DTOs\\Authentication\\UserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T13:32:53.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20251111164931_AddApplicationRole.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111164931_AddApplicationRole.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111164931_AddApplicationRole.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111164931_AddApplicationRole.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111164931_AddApplicationRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T16:49:32.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20251111122053_AddApplicationUserDbSet.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111122053_AddApplicationUserDbSet.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111122053_AddApplicationUserDbSet.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111122053_AddApplicationUserDbSet.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111122053_AddApplicationUserDbSet.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAA2wNUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T12:20:54.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "HelioApp.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAwwCgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T08:47:35.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\appsettings.json",
+              "RelativeDocumentMoniker": "HelioApp.API\\appsettings.json",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\appsettings.json",
+              "RelativeToolTip": "HelioApp.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-11T08:12:07.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20251111130315_UpdatedConfigurationApplicationUser.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111130315_UpdatedConfigurationApplicationUser.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111130315_UpdatedConfigurationApplicationUser.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111130315_UpdatedConfigurationApplicationUser.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111130315_UpdatedConfigurationApplicationUser.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAcwPIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T13:03:16.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20251111131135_RemoveApplicationUserIdDefault.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111131135_RemoveApplicationUserIdDefault.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111131135_RemoveApplicationUserIdDefault.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111131135_RemoveApplicationUserIdDefault.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111131135_RemoveApplicationUserIdDefault.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T13:11:35.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20251111123618_AddGuidDefaultToApplicationUserId.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111123618_AddGuidDefaultToApplicationUserId.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111123618_AddGuidDefaultToApplicationUserId.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111123618_AddGuidDefaultToApplicationUserId.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Persistence\\Data\\Migrations\\20251111123618_AddGuidDefaultToApplicationUserId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T12:36:19.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AccountType.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Domain\\Enums\\AccountType.cs",
+              "RelativeDocumentMoniker": "HelioApp.Domain\\Enums\\AccountType.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Domain\\Enums\\AccountType.cs",
+              "RelativeToolTip": "HelioApp.Domain\\Enums\\AccountType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T10:10:54.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Contracts\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\Contracts\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Contracts\\Services\\IAuthService.cs",
+              "RelativeToolTip": "HelioApp.Application\\Contracts\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T09:06:12.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "OfferService.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Services\\OfferService.cs",
+              "RelativeDocumentMoniker": "HelioApp.Application\\Services\\OfferService.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\Services\\OfferService.cs",
+              "RelativeToolTip": "HelioApp.Application\\Services\\OfferService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T08:31:31.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CloudnaryImageService.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Blob\\CloudnaryImageService.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Blob\\CloudnaryImageService.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Blob\\CloudnaryImageService.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Blob\\CloudnaryImageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:12:03.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CloudinaryOptions.cs",
+              "DocumentMoniker": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Blob\\CloudinaryOptions.cs",
+              "RelativeDocumentMoniker": "HelioApp.Infrastructure\\Blob\\CloudinaryOptions.cs",
+              "ToolTip": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\Blob\\CloudinaryOptions.cs",
+              "RelativeToolTip": "HelioApp.Infrastructure\\Blob\\CloudinaryOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:12:03.113Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

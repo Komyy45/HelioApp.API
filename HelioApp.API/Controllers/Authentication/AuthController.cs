@@ -32,6 +32,6 @@ public sealed class AuthController(IAuthService authService) : BaseApiController
         
         var response = await authService.GetCurrentUserById(userId); 
         
-        return Ok();
+        return Ok(response);
     }
 }

@@ -2,6 +2,7 @@
 
 public enum AccountType : byte
 {
-    Regular = 1,
-    ServiceProvider = 2
+    User = 1,
+    ServiceProvider = 2,
+    Admin = 3
 }

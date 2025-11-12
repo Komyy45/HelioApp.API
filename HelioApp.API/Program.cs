@@ -1,7 +1,5 @@
 using HelioApp.API;
-using HelioApp.API.Extensions;
 using HelioApp.API.Middlewares;
-using HelioApp.Domain.Entities.Authentication;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,19 +7,14 @@ builder.ConfigureWebApplication();
 
 var app = builder.Build();
 
-await app.InitializeDatabaseAsync();
-
-// // Configure middleware
-// if (app.Environment.IsDevelopment())
-// {
-//     app.UseSwagger();
-//     app.UseSwaggerUI();
-//     app.MapOpenApi();
-// }
+using (var scope = app.Services.CreateScope())
+{
+    var dbInitializer = scope.ServiceProvider.GetRequiredService<HelioApp.Application.Contracts.IDbContextInitializer>();
+    await dbInitializer.InitializeAsync();
+}
 
 app.UseSwagger();
-app.UseSwaggerUI();
-app.MapOpenApi();
+app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HelioApp API V1"));
 
 app.UseCors("AllowAll");
 
@@ -30,7 +23,6 @@ app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
-
 app.UseAuthorization();
 
 app.MapControllers();

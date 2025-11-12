@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.API\\HelioApp.API.csproj": {}
+    "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\HelioApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.API\\HelioApp.API.csproj": {
+    "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\HelioApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.API\\HelioApp.API.csproj",
+        "projectUniqueName": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\HelioApp.API.csproj",
         "projectName": "HelioApp.API",
-        "projectPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.API\\HelioApp.API.csproj",
-        "packagesPath": "C:\\Users\\youss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.API\\obj\\",
+        "projectPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\HelioApp.API.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\youss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,11 +32,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Application\\HelioApp.Application.csproj": {
-                "projectPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Application\\HelioApp.Application.csproj"
+              "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\HelioApp.Application.csproj": {
+                "projectPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\HelioApp.Application.csproj"
               },
-              "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj"
+              "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj": {
+                "projectPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj"
               }
             }
           }
@@ -51,7 +51,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -99,24 +99,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Application\\HelioApp.Application.csproj": {
+    "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\HelioApp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Application\\HelioApp.Application.csproj",
+        "projectUniqueName": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\HelioApp.Application.csproj",
         "projectName": "HelioApp.Application",
-        "projectPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Application\\HelioApp.Application.csproj",
-        "packagesPath": "C:\\Users\\youss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Application\\obj\\",
+        "projectPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\HelioApp.Application.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\youss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -131,8 +131,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Domain\\HelioApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Domain\\HelioApp.Domain.csproj"
+              "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Domain\\HelioApp.Domain.csproj": {
+                "projectPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Domain\\HelioApp.Domain.csproj"
               }
             }
           }
@@ -147,7 +147,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -157,6 +157,10 @@
               "target": "Package",
               "version": "[15.1.0, )"
             },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[13.1.0, )"
@@ -164,6 +168,10 @@
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )"
             }
           },
           "imports": [
@@ -182,24 +190,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Domain\\HelioApp.Domain.csproj": {
+    "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Domain\\HelioApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Domain\\HelioApp.Domain.csproj",
+        "projectUniqueName": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Domain\\HelioApp.Domain.csproj",
         "projectName": "HelioApp.Domain",
-        "projectPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Domain\\HelioApp.Domain.csproj",
-        "packagesPath": "C:\\Users\\youss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Domain\\obj\\",
+        "projectPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Domain\\HelioApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\youss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -226,11 +234,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -247,24 +261,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj": {
+    "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj",
+        "projectUniqueName": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj",
         "projectName": "HelioApp.Infrastructure",
-        "projectPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\youss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Infrastructure\\obj\\",
+        "projectPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\HelioApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\youss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -279,8 +293,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Application\\HelioApp.Application.csproj": {
-                "projectPath": "C:\\Users\\youss\\OneDrive\\Desktop\\HelioApp-backend\\HelioApp.Application\\HelioApp.Application.csproj"
+              "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\HelioApp.Application.csproj": {
+                "projectPath": "C:\\APi Projects FeeLance\\Helio\\HelioApp.API\\HelioApp.Application\\HelioApp.Application.csproj"
               }
             }
           }
@@ -295,25 +309,43 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "CloudinaryDotNet": {
               "target": "Package",
               "version": "[1.27.8, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[9.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.10, )"
+              "version": "[9.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.11, )"
             }
           },
           "imports": [
@@ -332,7 +364,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

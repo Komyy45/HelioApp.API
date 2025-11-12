@@ -133,3 +133,19 @@ C:\Users\youss\OneDrive\Desktop\HelioApp-backend\HelioApp.Application\obj\Debug\
 C:\Users\youss\OneDrive\Desktop\HelioApp-backend\HelioApp.Application\obj\Debug\net9.0\refint\HelioApp.Application.dll
 C:\Users\youss\OneDrive\Desktop\HelioApp-backend\HelioApp.Application\obj\Debug\net9.0\HelioApp.Application.pdb
 C:\Users\youss\OneDrive\Desktop\HelioApp-backend\HelioApp.Application\obj\Debug\net9.0\ref\HelioApp.Application.dll
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\bin\Debug\net9.0\HelioApp.Application.deps.json
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\bin\Debug\net9.0\HelioApp.Application.dll
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\bin\Debug\net9.0\HelioApp.Application.pdb
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\bin\Debug\net9.0\HelioApp.Domain.dll
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\bin\Debug\net9.0\HelioApp.Domain.pdb
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\obj\Debug\net9.0\HelioApp.Application.csproj.AssemblyReference.cache
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\obj\Debug\net9.0\HelioApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\obj\Debug\net9.0\HelioApp.Application.AssemblyInfoInputs.cache
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\obj\Debug\net9.0\HelioApp.Application.AssemblyInfo.cs
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\obj\Debug\net9.0\HelioApp.Application.csproj.CoreCompileInputs.cache
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\obj\Debug\net9.0\HelioApp.Application.sourcelink.json
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\obj\Debug\net9.0\HelioApp.A20D4236.Up2Date
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\obj\Debug\net9.0\HelioApp.Application.dll
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\obj\Debug\net9.0\refint\HelioApp.Application.dll
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\obj\Debug\net9.0\HelioApp.Application.pdb
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Application\obj\Debug\net9.0\ref\HelioApp.Application.dll

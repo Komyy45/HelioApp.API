@@ -155,3 +155,23 @@ C:\Users\youss\OneDrive\Desktop\HelioApp-backend\HelioApp.Infrastructure\obj\Deb
 C:\Users\youss\OneDrive\Desktop\HelioApp-backend\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.Infrastructure.pdb
 C:\Users\youss\OneDrive\Desktop\HelioApp-backend\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.Infrastructure.genruntimeconfig.cache
 C:\Users\youss\OneDrive\Desktop\HelioApp-backend\HelioApp.Infrastructure\obj\Debug\net9.0\ref\HelioApp.Infrastructure.dll
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\bin\Debug\net9.0\HelioApp.Infrastructure.deps.json
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\bin\Debug\net9.0\HelioApp.Infrastructure.runtimeconfig.json
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\bin\Debug\net9.0\HelioApp.Infrastructure.dll
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\bin\Debug\net9.0\HelioApp.Infrastructure.pdb
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\bin\Debug\net9.0\HelioApp.Application.dll
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\bin\Debug\net9.0\HelioApp.Domain.dll
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\bin\Debug\net9.0\HelioApp.Application.pdb
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\bin\Debug\net9.0\HelioApp.Domain.pdb
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.Infrastructure.csproj.AssemblyReference.cache
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.Infrastructure.AssemblyInfoInputs.cache
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.Infrastructure.AssemblyInfo.cs
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.Infrastructure.sourcelink.json
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.E70E875A.Up2Date
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.Infrastructure.dll
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\refint\HelioApp.Infrastructure.dll
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.Infrastructure.pdb
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\HelioApp.Infrastructure.genruntimeconfig.cache
+C:\APi Projects FeeLance\Helio\HelioApp.API\HelioApp.Infrastructure\obj\Debug\net9.0\ref\HelioApp.Infrastructure.dll

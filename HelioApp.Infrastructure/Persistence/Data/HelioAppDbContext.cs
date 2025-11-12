@@ -1,10 +1,12 @@
 ﻿using System.Reflection;
 using HelioApp.Domain.Entities.Community;
+using HelioApp.Domain.Entities.Authentication;
 using HelioApp.Domain.Entities.ContentManagement;
 using HelioApp.Domain.Entities.Properties;
 using HelioApp.Domain.Entities.Reviews;
 using HelioApp.Domain.Entities.Services___Categories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace HelioApp.Infrastructure.Persistence.Data;
 
@@ -15,13 +17,17 @@ public sealed class HelioAppDbContext(DbContextOptions<HelioAppDbContext> option
     public DbSet<Subcategory> Subcategories { get; private set; } = default!;
     public DbSet<Service> Services { get; private set; } = default!;
     public DbSet<Property> Properties { get; private set; } = default!;
-    
+
     public DbSet<Review> Reviews { get; private set; } = default!;
     public DbSet<Comment> Comments { get; private set; } = default!;
     public DbSet<Post> Posts { get; private set; } = default!;
     public DbSet<OfferClaim> OfferClaims { get; private set; } = default!;
     public DbSet<OfferCode> OfferCodes { get; private set; } = default!;
 
+    #region Authentication
+    public DbSet<ApplicationUser> Users { get; private set; } = default!;
+    public DbSet<ApplicationRole> Roles { get; private set; } = default!;
+    #endregion
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
