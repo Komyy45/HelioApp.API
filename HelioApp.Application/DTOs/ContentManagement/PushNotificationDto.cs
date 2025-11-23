@@ -1,3 +1,11 @@
-﻿namespace HelioApp.Application.DTOs.ContentManagement;
+﻿using HelioApp.Domain.Enums;
 
-public sealed record PushNotificationDto();
+namespace HelioApp.Application.DTOs.ContentManagement;
+
+public sealed record PushNotificationDto(
+    string Title,
+    string Content,
+    NotificationTargetAudience TargetAudience,
+    List<string>? SpecificUserIds,
+    DateTime StartDate
+);

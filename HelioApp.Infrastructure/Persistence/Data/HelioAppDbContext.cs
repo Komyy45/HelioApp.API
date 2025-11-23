@@ -21,6 +21,8 @@ public sealed class HelioAppDbContext(DbContextOptions<HelioAppDbContext> option
     public DbSet<Post> Posts { get; private set; } = default!;
     public DbSet<OfferClaim> OfferClaims { get; private set; } = default!;
     public DbSet<OfferCode> OfferCodes { get; private set; } = default!;
+    public DbSet<Offer> Offers { get; private set; } = default!;
+
 
 
 

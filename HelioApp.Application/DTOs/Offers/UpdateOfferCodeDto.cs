@@ -3,7 +3,7 @@
     public sealed record UpdateOfferCodeDto(
         Guid Id,
         bool IsUsed,
-        Guid? UsedBy,
-        DateTime? UsedAt
+        string? UsedBy,
+        DateTimeOffset? UsedAt
     );
 }

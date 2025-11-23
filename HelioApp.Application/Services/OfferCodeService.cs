@@ -1,59 +1,57 @@
-﻿using HelioApp.Application.Contracts.Repositories;
+﻿using AutoMapper;
+using HelioApp.Application.Contracts.Repositories;
 using HelioApp.Application.Contracts.Services;
 using HelioApp.Application.DTOs.Offers;
 using HelioApp.Domain.Entities.ContentManagement;
+using HelioApp.Domain.Exceptions;
 
 namespace HelioApp.Application.Services
 {
-    internal sealed class OfferCodeService(IOfferCodeRepository offerCodeRepository)
-        : IOfferCodeService
+    internal sealed class OfferCodeService(
+        IOfferCodeRepository offerCodeRepository,
+        IMapper mapper 
+    ) : IOfferCodeService
     {
+
         public async Task<IEnumerable<OfferCodeDto>> GetAllAsync()
         {
             var codes = await offerCodeRepository.GetAllAsync();
-            return codes.Select(c => new OfferCodeDto(
-                c.Id, c.OfferId, c.Code, c.IsUsed,
-                c.UsedBy.ToString(), c.UsedAt, c.ExpiresAt, c.CreatedAt
-            ));
+            return mapper.Map<IEnumerable<OfferCodeDto>>(codes);
         }
 
         public async Task<OfferCodeDto?> GetByIdAsync(Guid id)
         {
             var code = await offerCodeRepository.GetByIdAsync(id);
-            if (code is null) throw new Exception("Offer Code not found");
+            if (code is null) throw new NotFoundException(nameof(OfferCode));
 
-            return new OfferCodeDto(
-                code.Id, code.OfferId, code.Code, code.IsUsed,
-                code.UsedBy.ToString(), code.UsedAt, code.ExpiresAt, code.CreatedAt
-            );
+            return mapper.Map<OfferCodeDto>(code);
         }
 
         public async Task<OfferCodeDto> CreateAsync(CreateOfferCodeDto dto)
         {
-            var code = new OfferCode
+            var existingCode = await offerCodeRepository.GetByCodeAsync(dto.Code);
+            if (existingCode is not null)
             {
-                OfferId = dto.OfferId,
-                Code = dto.Code,
-                ExpiresAt = dto.ExpiresAt,
-            };
+                throw new ApplicationException($"Offer Code '{dto.Code}' already exists.");
+            }
+            var code = mapper.Map<OfferCode>(dto);
 
             await offerCodeRepository.AddAsync(code);
             await offerCodeRepository.CompleteAsync();
 
-            return new OfferCodeDto(
-                code.Id, code.OfferId, code.Code, code.IsUsed,
-                code.UsedBy.ToString(), code.UsedAt, code.ExpiresAt, code.CreatedAt
-            );
+            return mapper.Map<OfferCodeDto>(code);
         }
 
         public async Task UpdateAsync(UpdateOfferCodeDto dto)
         {
             var code = await offerCodeRepository.GetByIdAsync(dto.Id);
-            if (code is null) throw new Exception("Offer Code not found");
+            if (code is null) throw new NotFoundException(nameof(OfferCode));
+            if (code.IsUsed && dto.IsUsed == false)
+            {
+                throw new ApplicationException("Cannot revert used code status.");
+            }
 
-            code.IsUsed = dto.IsUsed;
-            code.UsedBy = dto.UsedBy.ToString();
-            code.UsedAt = dto.UsedAt;
+            mapper.Map(dto, code);
 
             offerCodeRepository.Update(code);
             await offerCodeRepository.CompleteAsync();
@@ -63,6 +61,10 @@ namespace HelioApp.Application.Services
         {
             var code = await offerCodeRepository.GetByIdAsync(id);
             if (code is null) return false;
+            if (code.IsUsed)
+            {
+                throw new ApplicationException("Cannot delete a used offer code.");
+            }
 
             offerCodeRepository.Delete(code);
             await offerCodeRepository.CompleteAsync();

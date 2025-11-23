@@ -1,67 +1,62 @@
-﻿using HelioApp.Application.Contracts.Repositories;
+﻿using AutoMapper;
+using HelioApp.Application.Contracts.Repositories;
 using HelioApp.Application.Contracts.Services;
 using HelioApp.Application.DTOs.Offers;
+using HelioApp.Domain.Exceptions; 
 using HelioApp.Domain.Entities.ContentManagement;
 
 namespace HelioApp.Application.Services
 {
-    internal sealed class OfferClaimService(IOfferClaimRepository offerClaimRepository)
-        : IOfferClaimService
+
+    internal sealed class OfferClaimService(
+        IOfferClaimRepository offerClaimRepository,
+        IMapper mapper
+    ) : IOfferClaimService
     {
         public async Task<IEnumerable<OfferClaimDto>> GetAllAsync()
         {
             var claims = await offerClaimRepository.GetAllAsync();
-            return claims.Select(c => new OfferClaimDto(
-                c.Id, c.OfferId, c.UserId, c.ClaimCode,
-                c.IsRedeemed, c.RedeemedAt, c.RedemptionLocation,
-                c.ExpiresAt, c.ClaimedAt
-            ));
+            return mapper.Map<IEnumerable<OfferClaimDto>>(claims);
         }
 
         public async Task<OfferClaimDto?> GetByIdAsync(Guid id)
         {
             var claim = await offerClaimRepository.GetByIdAsync(id);
-            if (claim is null) throw new Exception("Offer Claim not found");
+            if (claim is null) throw new NotFoundException(nameof(OfferClaim));
 
-            return new OfferClaimDto(
-                claim.Id, claim.OfferId, claim.UserId, claim.ClaimCode,
-                claim.IsRedeemed, claim.RedeemedAt, claim.RedemptionLocation,
-                claim.ExpiresAt, claim.ClaimedAt
-            );
+            return mapper.Map<OfferClaimDto>(claim);
         }
 
         public async Task<OfferClaimDto> CreateAsync(CreateOfferClaimDto dto)
         {
-            var claim = new OfferClaim
+            var alreadyClaimed = await offerClaimRepository.IsUserAlreadyClaimedAsync(
+                dto.OfferId, dto.UserId);
+
+            if (alreadyClaimed)
             {
-                OfferId = dto.OfferId,
-                UserId = dto.UserId.ToString(),
-                ClaimCode = dto.ClaimCode,
-                ExpiresAt = dto.ExpiresAt,
-            };
+                throw new ApplicationException("User has already claimed this offer.");
+            }
+
+
+            var claim = mapper.Map<OfferClaim>(dto);
 
             await offerClaimRepository.AddAsync(claim);
             await offerClaimRepository.CompleteAsync();
 
-            return new OfferClaimDto(
-                claim.Id, claim.OfferId, claim.UserId, claim.ClaimCode,
-                claim.IsRedeemed, claim.RedeemedAt, claim.RedemptionLocation,
-                claim.ExpiresAt, claim.ClaimedAt
-            );
+            return mapper.Map<OfferClaimDto>(claim);
         }
 
         public async Task UpdateAsync(UpdateOfferClaimDto dto)
         {
             var claim = await offerClaimRepository.GetByIdAsync(dto.Id);
-            if (claim is null) throw new Exception("Offer Claim not found");
+            if (claim is null) throw new NotFoundException(nameof(OfferClaim));
 
-            claim.IsRedeemed = dto.IsRedeemed;
-            claim.RedeemedAt = dto.RedeemedAt;
-            claim.RedemptionLocation = dto.RedemptionLocation;
+            mapper.Map(dto, claim);
+
             offerClaimRepository.Update(claim);
-
             await offerClaimRepository.CompleteAsync();
         }
+
 
         public async Task<bool> DeleteAsync(Guid id)
         {

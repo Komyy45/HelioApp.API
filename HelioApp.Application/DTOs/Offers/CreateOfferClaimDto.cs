@@ -4,6 +4,6 @@
         Guid OfferId,
         Guid UserId,
         string ClaimCode,
-        DateTime ExpiresAt
+        DateTimeOffset ExpiresAt
     );
 }
