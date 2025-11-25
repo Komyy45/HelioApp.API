@@ -16,6 +16,8 @@ public static class DependencyInjection
             opt.AddProfile<OfferCodeMappingProfile>();
             opt.AddProfile<OfferProfile>();
             opt.AddProfile<ReviewProfile>();
+            opt.AddProfile<NotificationMappingProfile>();
+            opt.AddProfile<AdMappingProfile>();
         });
         
         services.AddScoped<ICategoryService, CategoryService>();
@@ -27,6 +29,9 @@ public static class DependencyInjection
         services.AddScoped<IEmergencyContactsService, EmergencyContactsService>();
         services.AddScoped<IPropertyService, PropertyService>();
         services.AddScoped<IReviewService, ReviewService>();
+        services.AddScoped<INotificationService, NotificationService>();
+        services.AddScoped<IUserNotificationService, UserNotificationService>();
+        services.AddScoped<IAdService, AdService>();
 
         return services;
     }

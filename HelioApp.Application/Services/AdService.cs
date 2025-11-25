@@ -1,28 +1,47 @@
-﻿using HelioApp.Application.Contracts.Repositories;
+﻿using AutoMapper;
+using HelioApp.Application.Contracts.Repositories;
 using HelioApp.Application.Contracts.Services;
 using HelioApp.Application.DTOs.ContentManagement;
+using HelioApp.Domain.Entities.ContentManagement;
 
 namespace HelioApp.Application.Services;
 
-internal sealed class AdService(IAdRepository adRepository) : IAdService
+internal sealed class AdService(IAdRepository adRepository, IMapper mapper) : IAdService
 {
-    public Task<IEnumerable<AdDto>> GetAll()
+    public async Task<IEnumerable<AdDto>> GetAll()
     {
-        throw new NotImplementedException();
+        var ads = await adRepository.GetAllAsync();
+        return mapper.Map<IEnumerable<AdDto>>(ads);
     }
 
-    public Task<Guid> Create(CreateAdDto request)
+    public async Task<Guid> Create(CreateAdDto request)
     {
-        throw new NotImplementedException();
+        var entity = mapper.Map<Ad>(request);
+
+        await adRepository.AddAsync(entity);
+        await adRepository.CompleteAsync();
+
+        return entity.Id;
     }
 
-    public Task Update(UpdateAdDto request)
+
+    public async Task Update(UpdateAdDto request)
     {
-        throw new NotImplementedException();
+        var existing = await adRepository.GetByIdAsync(request.Id)
+            ?? throw new KeyNotFoundException("Ad not found");
+
+        mapper.Map(request, existing);
+
+        adRepository.Update(existing);
+        await adRepository.CompleteAsync();
     }
 
-    public Task Delete(Guid id)
+    public async Task Delete(Guid id)
     {
-        throw new NotImplementedException();
+        var existing = await adRepository.GetByIdAsync(id)
+            ?? throw new KeyNotFoundException("Ad not found");
+
+        adRepository.Delete(existing);
+        await adRepository.CompleteAsync();
     }
 }

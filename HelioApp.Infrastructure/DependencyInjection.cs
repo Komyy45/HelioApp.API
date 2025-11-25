@@ -5,6 +5,7 @@ using HelioApp.Application.Contracts.Repositories;
 using HelioApp.Infrastructure.Blob;
 using HelioApp.Infrastructure.Persistence.Data;
 using HelioApp.Infrastructure.Persistence.Repositories;
+using HelioApp.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -42,6 +43,9 @@ public static class DependencyInjection
         services.AddScoped<IEmergencyContactsRepository, EmergencyContactsRepository>();
         services.AddScoped<IPropertyRepository, PropertyRepository>();
         services.AddScoped<IReviewRepository, ReviewRepository>();
+        services.AddScoped<INotificationRepository, NotificationRepository>();
+        services.AddScoped<IUserNotificationRepository, UserNotificationRepository>();
+        services.AddScoped<IAdRepository, AdRepository>();
         services.AddScoped<IDbContextInitializer, DbContextInitializer>();
         return services;
     }
