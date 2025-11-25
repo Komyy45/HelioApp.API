@@ -8,7 +8,7 @@ public interface IDiscussionCircleService
 
     public Task<Guid> Create(CreateDiscussionCircleDto request);
 
-    public Task Update(UpdateDiscussionCircleDto request);
+    public Task Update(Guid id, UpdateDiscussionCircleDto request);
 
     public Task Delete(Guid id);
 }

@@ -26,7 +26,7 @@ public sealed class HelioAppDbContext(DbContextOptions<HelioAppDbContext> option
     public DbSet<UserNotification> UserNotifications { get; private set; } = default!;
     public DbSet<Ad> Ads { get; private set; } = default!;
     public DbSet<News> News { get; private set; } = default!;
-
+    public DbSet<DiscussionCircle> DiscussionCircles { get; private set; } = default!;
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

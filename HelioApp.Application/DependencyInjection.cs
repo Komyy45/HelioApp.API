@@ -18,6 +18,8 @@ public static class DependencyInjection
             opt.AddProfile<ReviewProfile>();
             opt.AddProfile<NotificationMappingProfile>();
             opt.AddProfile<AdMappingProfile>();
+            opt.AddProfile<NewsMappingProfile>();
+            opt.AddProfile<DiscussionCircleMappingProfile>();
         });
         
         services.AddScoped<ICategoryService, CategoryService>();
@@ -33,6 +35,7 @@ public static class DependencyInjection
         services.AddScoped<IUserNotificationService, UserNotificationService>();
         services.AddScoped<IAdService, AdService>();
         services.AddScoped<INewsService, NewsService>();
+        services.AddScoped<IDiscussionCircleService, DiscussionCircleService>();
         return services;
     }
 }

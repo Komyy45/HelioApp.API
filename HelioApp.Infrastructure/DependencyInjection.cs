@@ -48,6 +48,7 @@ public static class DependencyInjection
         services.AddScoped<IAdRepository, AdRepository>();
         services.AddScoped<INewsRepository, NewsRepository>();
         services.AddScoped<IDbContextInitializer, DbContextInitializer>();
+        services.AddScoped<IDiscussionCircleRepository, DiscussionCircleRepository>();
         return services;
     }
 }

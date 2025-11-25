@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HelioApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b24c8d372cb743a4a1905f3fafebed1925df721")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71c1e35cf7bf4b3a44d14716c4dca6f7409499ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("HelioApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HelioApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
