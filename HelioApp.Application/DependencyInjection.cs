@@ -32,7 +32,7 @@ public static class DependencyInjection
         services.AddScoped<INotificationService, NotificationService>();
         services.AddScoped<IUserNotificationService, UserNotificationService>();
         services.AddScoped<IAdService, AdService>();
-
+        services.AddScoped<INewsService, NewsService>();
         return services;
     }
 }

@@ -46,6 +46,7 @@ public static class DependencyInjection
         services.AddScoped<INotificationRepository, NotificationRepository>();
         services.AddScoped<IUserNotificationRepository, UserNotificationRepository>();
         services.AddScoped<IAdRepository, AdRepository>();
+        services.AddScoped<INewsRepository, NewsRepository>();
         services.AddScoped<IDbContextInitializer, DbContextInitializer>();
         return services;
     }

@@ -22,7 +22,10 @@ public sealed class HelioAppDbContext(DbContextOptions<HelioAppDbContext> option
     public DbSet<OfferClaim> OfferClaims { get; private set; } = default!;
     public DbSet<OfferCode> OfferCodes { get; private set; } = default!;
     public DbSet<Offer> Offers { get; private set; } = default!;
-
+    public DbSet<Notification> Notifications { get; private set; } = default!;
+    public DbSet<UserNotification> UserNotifications { get; private set; } = default!;
+    public DbSet<Ad> Ads { get; private set; } = default!;
+    public DbSet<News> News { get; private set; } = default!;
 
 
 

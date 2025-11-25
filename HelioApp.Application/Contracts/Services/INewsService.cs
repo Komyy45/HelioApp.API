@@ -4,11 +4,11 @@ namespace HelioApp.Application.Contracts.Services;
 
 public interface INewsService
 {
-    public Task<IEnumerable<NewsDto>> GetAll();
+    Task<IEnumerable<NewsDto>> GetAll();
 
-    public Task<Guid> Create(CreateNewsDto request);
+    Task<Guid> Create(CreateNewsDto request);
 
-    public Task Update(UpdateNewsDto request);
+    Task Update(Guid id, UpdateNewsDto request);
 
-    public Task Delete(Guid id);
+    Task Delete(Guid id);
 }
